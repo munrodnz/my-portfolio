@@ -23,7 +23,7 @@ const About = () => {
         .catch(console.error);
     }, []);
 
-    if (!author) return <div>Loading...</div>
+    if (!author) return <div className='bg-green-100 min-h-screen p-12'><h1>Loading...just a second</h1></div>
 
     return (
         <main className='relative'>

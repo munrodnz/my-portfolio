@@ -23,8 +23,27 @@ const NavBar = () => {
                     activeClassName='border-b-2'
                     >Projects</NavLink>
                 </nav>
-                <div>
+                <div className='inline-flex items-center'>
                     {/* TODO Add Social Icons */}
+                    <a href='https://twitter.com/munrod10' target='_blank' rel='noopener noreferrer'>
+                        <img 
+                        src='/twitter.png'
+                        alt='Twitter Icon'
+                        className='hover:transform scale(0.5) translateY(-15px)'
+                        />
+                    </a>
+                    <a href='https://www.linkedin.com/in/darryl-munro' target='_blank' rel='noopener noreferrer'>
+                        <img 
+                        src='/linkedin.png'
+                        alt='LinkedIn Icon'
+                        />
+                    </a>
+                    <a href='https://www.instagram.com/darrylmunronz/' target='_blank' rel='noopener noreferrer'>
+                        <img 
+                        src='/instagram.png'
+                        alt='Instagram Icon'
+                        />
+                    </a>
                 </div>
             </div>
         </header>
