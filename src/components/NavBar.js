@@ -27,7 +27,7 @@ const NavBar = () => {
                     <ul className='inline-flex items-center space-x-2'>
                         <a href='https://twitter.com/munrod10' target='_blank' rel='noopener noreferrer'>
                             <img 
-                            src='https://i.ibb.co/Wnxq2Nq/twitter.png'
+                            src='/twitter.png'
                             alt='Twitter Icon'
                             className='hover:transform scale(0.5) translateY(-15px)'
                             />
@@ -40,7 +40,7 @@ const NavBar = () => {
                         </a>
                         <a href='https://www.instagram.com/darrylmunronz/' target='_blank' rel='noopener noreferrer'>
                             <img 
-                            src='https://i.ibb.co/ySwtH4B/instagram.png'
+                            src='/instagram.png'
                             alt='Instagram Icon'
                             />
                         </a>

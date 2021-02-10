@@ -9,6 +9,16 @@ function urlFor(source) {
     return builder.image(source)
 }
 
+const serializers = {
+    types: {
+        code: props => (
+            <pre data-language={props.node.language}>
+                <code>{props.node.code}</code>
+            </pre>
+        )
+    }
+}
+
 const SinglePost = () => {
     const [singlePost, setSinglePost] = useState(null);
     const { slug } = useParams();
@@ -65,7 +75,7 @@ const SinglePost = () => {
                     />
                 </header>
                 <div className='px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full leading-7'>
-                    <BlockContent blocks={singlePost.body} projectId='qxfkabgb' dataset='production'/>
+                    <BlockContent blocks={singlePost.body} serializers={serializers} projectId='qxfkabgb' dataset='production'/>
                 </div>
             </article>
         </main>
